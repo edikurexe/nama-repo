@@ -1,0 +1,50 @@
+name: Build & Publish RideComp APK
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Build APK
+        run: ./gradlew :app:assembleDebug --no-daemon --dependency-verification=off
+
+      - name: Prepare APK file
+        run: |
+          APK_PATH=$(find app/build/outputs/apk/debug -name "*.apk" | head -n 1)
+          if [ -z "$APK_PATH" ]; then
+            echo "APK tidak ditemukan!"
+            exit 1
+          fi
+          cp "$APK_PATH" RideComp.apk
+          ls -lh RideComp.apk
+
+      - name: Publish to GitHub Releases
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v1.0-build-${{ github.run_number }}
+          name: RideComp Build #${{ github.run_number }}
+          body: |
+            Build otomatis RideComp (tanpa LeakCanary & tanpa embel-embel Debug).
+            Langsung download file **RideComp.apk** di bawah ini.
+          files: RideComp.apk
+          make_latest: true
