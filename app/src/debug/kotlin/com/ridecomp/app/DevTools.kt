@@ -63,7 +63,6 @@ object DevTools {
         // RULE-EXCEPTION: OEM framework leak, not app code. realme/OPPO ColorOS adds a static
         // android.gesture.UniGestureDetector that keeps the last destroyed window's context (seen on the
         // realme RMX3830, Android 15). It is reported as a library leak so app leaks stay visible (D-87).
-        )
     }
 
     /** One thread for StrictMode reports, off the thread that broke the policy. */
