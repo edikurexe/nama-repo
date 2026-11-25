@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ride_name_morning">Gowes Pagi</string>
+    <string name="ride_name_noon">Gowes Siang</string>
+    <string name="ride_name_afternoon">Gowes Sore</string>
+    <string name="ride_name_evening">Gowes Malam</string>
+    <string name="notification_channel_recording">Perekaman ride</string>
+    <string name="notification_channel_recording_description">Menampilkan ride selama sedang direkam.</string>
+    <string name="notification_title_recording">Merekam ride</string>
+    <string name="notification_title_paused">Ride dijeda</string>
+    <string name="notification_title_auto_paused">Jeda otomatis</string>
+    <string name="notification_title_finished">Ride selesai · simpan atau buang</string>
+    <string name="notification_title_starting">Memulai ride…</string>
+    <string name="notification_action_pause">Jeda</string>
+    <string name="notification_action_resume">Lanjutkan</string>
+    <string name="notification_battery_saver">Mode hemat aktif</string>
+    <string name="notification_battery_critical">Mode kritis</string>
+    <string name="notification_title_incident">Insiden terdeteksi! Kamu baik-baik saja?</string>
+    <string name="notification_title_incident_sent">SMS darurat terkirim</string>
+    <string name="notification_action_incident_ok">SAYA BAIK-BAIK SAJA</string>
+    <string name="notification_action_incident_send">KIRIM SEKARANG</string>
+    <string name="notification_action_incident_safe">SAYA AMAN</string>
+    <string name="sms_test">RideComp UJI: SMS darurat dari %1$s berfungsi. Tidak perlu tindakan.</string>
+    <string name="sms_incident">RideComp: %1$s mungkin mengalami kecelakaan saat bersepeda pada %2$s. %3$s Pesan otomatis.</string>
+    <string name="sms_location_accuracy">Lokasi terakhir: %1$s (akurasi ±%2$d m).</string>
+    <string name="sms_location">Lokasi terakhir: %1$s.</string>
+    <string name="sms_location_unknown">Lokasi tidak diketahui.</string>
+    <string name="sms_safe">RideComp: %1$s dalam keadaan aman. Terima kasih.</string>
+    <string name="sms_rider_unknown">pesepeda</string>
+
+    <!-- Pengumuman suara (T7.1) -->
+    <plurals name="voice_kilometers">
+        <item quantity="other">%1$d kilometer</item>
+    </plurals>
+    <plurals name="voice_miles">
+        <item quantity="other">%1$d mil</item>
+    </plurals>
+    <plurals name="voice_hours">
+        <item quantity="other">%1$d jam</item>
+    </plurals>
+    <plurals name="voice_minutes">
+        <item quantity="other">%1$d menit</item>
+    </plurals>
+    <plurals name="voice_seconds">
+        <item quantity="other">%1$d detik</item>
+    </plurals>
+    <string name="voice_time">Waktu %1$s</string>
+    <string name="voice_avg_speed">Rata-rata %1$s %2$s</string>
+    <string name="voice_heart_rate">Detak jantung %1$d</string>
+    <plurals name="voice_power">
+        <item quantity="other">Power %1$d watt</item>
+    </plurals>
+    <string name="voice_lap">Lap %1$d</string>
+    <string name="voice_lap_time">Waktu lap %1$s</string>
+    <string name="voice_kmh">kilometer per jam</string>
+    <string name="voice_mph">mil per jam</string>
+    <string name="voice_drink">Waktunya minum</string>
+    <string name="voice_eat">Waktunya makan</string>
+    <string name="voice_too_hard">Terlalu berat untuk zona %1$d. Pelankan sedikit.</string>
+    <string name="voice_session_done">Sesi selesai. Mantap!</string>
+</resources>

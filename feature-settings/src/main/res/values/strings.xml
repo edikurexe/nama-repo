@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">Settings</string>
+    <string name="settings_profile">Rider profile</string>
+    <string name="settings_profile_subtitle">Weight, HR max, FTP</string>
+    <string name="settings_data_pages">Data pages</string>
+    <string name="settings_activity_profiles">Activity profiles</string>
+    <string name="settings_activity_profiles_subtitle">Road, Gravel, MTB, Indoor, Commute</string>
+    <string name="settings_screen_battery">Screen &amp; battery</string>
+    <string name="settings_safety">Safety &amp; emergency contacts</string>
+    <string name="settings_offline_maps">Maps</string>
+    <string name="settings_units">Units</string>
+    <string name="settings_display">Display</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_backup">Backup &amp; export data</string>
+    <string name="settings_battery_help">My phone kills the app</string>
+    <string name="settings_developer" translatable="false">Developer</string>
+    <string name="settings_coming_soon">Available in a later version</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="profile_weight">Body weight</string>
+    <string name="profile_hr_max">HR max (optional)</string>
+    <string name="profile_hr_rest">Resting HR (optional)</string>
+    <string name="profile_ftp">FTP (optional)</string>
+    <string name="profile_birth_year">Birth year (optional)</string>
+    <string name="profile_sex">Sex (optional, for calories)</string>
+    <string name="profile_sex_male">Male</string>
+    <string name="profile_sex_female">Female</string>
+    <string name="profile_sex_unset">Not set</string>
+    <string name="profile_estimate_hr_max">Fill HR max from age (220 − age)</string>
+    <string name="profile_estimate_hr_max_needs_year">Enter your birth year to estimate HR max from age (220 − age).</string>
+    <string name="profile_hr_max_estimated">Estimate only — a field test is more accurate.</string>
+    <string name="profile_save">SAVE</string>
+    <string name="profile_error_invalid">Check this value</string>
+    <string name="unit_kg">kg</string>
+    <string name="unit_bpm">bpm</string>
+    <string name="unit_watt">W</string>
+
+    <string name="ride_settings_title">Ride, screen &amp; battery</string>
+    <string name="ride_settings_auto_pause">Auto pause</string>
+    <string name="ride_settings_auto_pause_description">Pauses when you stop and resumes when you ride again.</string>
+    <string name="ride_settings_auto_pause_delay">Pause after standing still for</string>
+    <string name="ride_settings_seconds">%1$d s</string>
+    <string name="ride_settings_auto_lap">Auto lap</string>
+    <string name="ride_settings_off">Off</string>
+    <string name="ride_settings_km">%1$d km</string>
+    <string name="ride_settings_drink">Drink reminder</string>
+    <string name="ride_settings_eat">Eat reminder</string>
+    <string name="ride_settings_minutes">%1$d min</string>
+    <string name="ride_settings_screen">Screen during the ride</string>
+    <string name="ride_settings_screen_always_on">Always on</string>
+    <string name="ride_settings_screen_auto_dim">Auto dim</string>
+    <string name="ride_settings_screen_off">Off (data in notification)</string>
+    <string name="ride_settings_battery_saver">Battery saver at 20 %</string>
+    <string name="ride_settings_battery_saver_description">Critical (10 %) and emergency (5 %) modes always stay on.</string>
+    <string name="ride_settings_volume_buttons">Volume buttons</string>
+    <string name="ride_settings_volume_buttons_description">During a ride: Volume Up = lap, Volume Down = pause/resume.</string>
+    <string name="ride_settings_units">Units</string>
+    <string name="ride_settings_metric">Metric (km, m)</string>
+    <string name="ride_settings_imperial">Imperial (mi, ft)</string>
+
+    <string name="onboarding_next">Continue</string>
+    <string name="onboarding_location_title">Location</string>
+    <string name="onboarding_notifications_title">Notifications</string>
+    <string name="onboarding_profile_title">Rider profile</string>
+
+    <string name="battery_help_title">My phone kills the app</string>
+    <string name="battery_help_intro">Your phone: %1$s. Do the steps below once so long rides are not stopped.</string>
+    <string name="battery_help_xiaomi">Settings → Apps → RideComp → Battery saver: No restrictions. Then Autostart: on. Lock RideComp in recent apps.</string>
+    <string name="battery_help_oppo">Settings → Battery → App battery management → RideComp: allow background activity and auto launch.</string>
+    <string name="battery_help_vivo">Settings → Battery → Background power consumption → RideComp: allow. Also enable Autostart in i Manager.</string>
+    <string name="battery_help_transsion">Phone Master → App management → Auto-start: RideComp on. Battery → RideComp: no restriction.</string>
+    <string name="battery_help_samsung">Settings → Battery → Background usage limits → remove RideComp from sleeping apps. App battery: Unrestricted.</string>
+    <string name="battery_help_generic">Settings → Apps → RideComp → Battery: Unrestricted / Do not optimise.</string>
+    <string name="battery_help_more">MORE HELP FOR YOUR PHONE</string>
+    <string name="safety_title">Safety</string>
+    <string name="safety_disclaimer">Incident detection helps but cannot catch every accident and may raise false alarms. SMS needs mobile signal and credit. While riding, a 30 s countdown lets you cancel before anything is sent.</string>
+    <string name="safety_enabled">Incident detection</string>
+    <string name="safety_enabled_description">Needs at least one contact and the SMS permission.</string>
+    <string name="safety_rider_name">Rider name (used in the SMS)</string>
+    <string name="safety_contacts">Emergency contacts (max 3)</string>
+    <string name="safety_pick_contact">+ Add contact from phone book</string>
+    <string name="safety_contact_name">Contact name</string>
+    <string name="safety_contact_phone">Phone number</string>
+    <string name="safety_add_contact">Add number</string>
+    <string name="safety_remove">Remove</string>
+    <string name="safety_send_test">Send test SMS</string>
+    <plurals name="safety_test_sent">
+        <item quantity="one">Test SMS sent to %1$d contact.</item>
+        <item quantity="other">Test SMS sent to %1$d contacts.</item>
+    </plurals>
+    <string name="safety_ok">OK</string>
+    <string name="safety_error_no_contacts">Add an emergency contact first.</string>
+    <string name="safety_error_permission">SMS permission is needed for emergency messages.</string>
+    <string name="safety_error_phone">This phone number is not valid.</string>
+    <string name="safety_error_too_many">At most 3 contacts.</string>
+    <string name="safety_error_too_soon">Wait one minute before the next test SMS.</string>
+    <string name="safety_error_send_failed">SMS could not be sent. Check signal and credit.</string>
+    <string name="settings_safety_subtitle">Incident detection, emergency contacts</string>
+    <string name="settings_backup_subtitle">Keep your rides safe outside this phone</string>
+    <string name="backup_title">Backup &amp; restore</string>
+    <string name="backup_last">Last backup: %1$s</string>
+    <string name="backup_never">No backup yet. All rides exist only on this phone.</string>
+    <string name="backup_password_enabled">Protect with a password (recommended)</string>
+    <string name="backup_password_warning">A forgotten password means the backup can never be opened.</string>
+    <string name="backup_password">Password</string>
+    <string name="backup_password_confirm">Repeat password</string>
+    <plurals name="backup_password_rule">
+        <item quantity="one">At least %1$d character, both fields equal.</item>
+        <item quantity="other">At least %1$d characters, both fields equal.</item>
+    </plurals>
+    <string name="backup_create">Create backup</string>
+    <plurals name="backup_created">
+        <item quantity="one">Backup created with %1$d ride.</item>
+        <item quantity="other">Backup created with %1$d rides.</item>
+    </plurals>
+    <string name="backup_restore_header">RESTORE</string>
+    <string name="backup_restore_hint">Restoring replaces all data on this phone. Emergency contacts must be added again afterwards.</string>
+    <string name="backup_restore_choose">Choose backup file</string>
+    <string name="backup_encrypted_hint">This backup is protected. Enter its password.</string>
+    <string name="backup_unlock">Open backup</string>
+    <plurals name="backup_summary">
+        <item quantity="one">Backup of %1$s · %2$d ride · RideComp %3$s</item>
+        <item quantity="other">Backup of %1$s · %2$d rides · RideComp %3$s</item>
+    </plurals>
+    <string name="backup_restore_warning">All rides and settings on this phone will be replaced. A safety copy of the current data is kept on the phone.</string>
+    <string name="backup_restore_final">Are you sure? This cannot be undone from the app.</string>
+    <string name="backup_restore_confirm">Replace all data</string>
+    <string name="backup_restore_confirm_final">Yes, restore now</string>
+    <string name="backup_restored">Restore ready. RideComp restarts to finish. Add your emergency contacts again in Safety.</string>
+    <string name="backup_restart">Restart RideComp</string>
+    <string name="backup_cancel">Cancel</string>
+    <string name="backup_working">Working… keep the app open.</string>
+    <string name="backup_error_password">Wrong password or damaged backup.</string>
+    <string name="backup_error_invalid">This file is not a valid RideComp backup.</string>
+    <string name="backup_error_too_large">This backup is too large to restore.</string>
+    <string name="backup_error_newer">This backup comes from a newer RideComp. Update RideComp first.</string>
+    <string name="backup_error_ride">Finish the current ride first.</string>
+    <string name="backup_error_write">The file could not be written or read. Try another location.</string>
+    <string name="onboarding_step">Step %1$d of %2$d</string>
+    <string name="onboarding_permissions_title">Turn your phone into a cycling computer</string>
+    <string name="onboarding_permissions_text">RideComp needs a few permissions so recording never stops mid-ride. All data stays on your phone.</string>
+    <string name="onboarding_location_reason">For GPS, distance &amp; speed</string>
+    <string name="onboarding_nearby_title">Nearby devices</string>
+    <string name="onboarding_nearby_reason">For HR, cadence and power sensors</string>
+    <string name="onboarding_notifications_reason">Ride data shows while the screen is off</string>
+    <string name="onboarding_granted">Allowed</string>
+    <string name="onboarding_allow">Allow</string>
+    <string name="onboarding_location_required">Only location is required. Sensors and notifications can wait.</string>
+    <string name="onboarding_battery_card_title">Don\'t let your phone kill RideComp</string>
+    <string name="onboarding_battery_detected">Detected: %1$s. %2$s</string>
+    <string name="onboarding_battery_open">Open battery settings</string>
+    <string name="onboarding_battery_done">Already allowed · open again</string>
+    <string name="onboarding_profile_text">Used for calories, estimated power and heart rate zones.</string>
+    <string name="onboarding_ready_title">Almost ready to ride</string>
+    <string name="onboarding_ready_text">Connect sensors now or later. Without sensors RideComp still records GPS, distance, speed and elevation.</string>
+    <string name="onboarding_sensors_title">Connect sensors</string>
+    <string name="onboarding_sensors_text">HR, cadence, power (optional)</string>
+    <string name="onboarding_scan">Scan</string>
+    <string name="onboarding_gps_title">GPS test</string>
+    <string name="onboarding_gps_searching">Searching for a signal…</string>
+    <string name="onboarding_gps_wait">Wait</string>
+    <string name="onboarding_gps_ready">Signal found · accuracy ±%1$d m</string>
+    <string name="onboarding_gps_ready_unknown">Signal found</string>
+    <string name="onboarding_gps_ok">OK</string>
+    <string name="onboarding_gps_unavailable">Location denied or switched off</string>
+    <string name="onboarding_gps_fail">Failed</string>
+    <string name="onboarding_tips_title">Phone mounting tips</string>
+    <string name="onboarding_tips">• Use a sturdy handlebar mount\n• Bring a power bank for rides over 3 hours\n• Choose the \"Auto dim\" screen mode to save battery</string>
+    <string name="onboarding_finish">Start using RideComp</string>
+    <string name="profile_hand_position">Hand position</string>
+    <string name="profile_hand_tops">Tops</string>
+    <string name="profile_hand_hoods">Hoods</string>
+    <string name="profile_hand_drops">Drops</string>
+    <string name="profile_later_note">Age, resting HR and sex can be added later in Settings.</string>
+    <string name="profile_save_next">Save &amp; continue</string>
+    <string name="onboarding_back_label">Back</string>
+    <string name="settings_auto_pause">Auto pause &amp; resume</string>
+    <string name="settings_reminders">Drink &amp; eat reminders</string>
+    <string name="settings_battery_help_brand">Autostart &amp; battery guide for %1$s</string>
+    <string name="settings_battery_help_generic">How to keep the phone from stopping rides</string>
+    <string name="settings_footer">RideComp · data stays on this phone, no ads or tracking</string>
+    <string name="settings_profile_value">%1$s kg · FTP %2$s</string>
+    <string name="settings_none">—</string>
+    <string name="settings_auto_pause_on">On · still %1$d s</string>
+    <string name="settings_off">Off</string>
+    <string name="settings_reminders_value">%1$s / %2$s min</string>
+    <string name="settings_units_metric">Metric</string>
+    <string name="settings_units_imperial">Imperial</string>
+    <string name="settings_backup_value">All on this phone</string>
+    <string name="settings_screen_off">Off</string>
+    <plurals name="settings_activity_profiles_value">
+        <item quantity="one">%1$d profile · data pages</item>
+        <item quantity="other">%1$d profiles · data pages</item>
+    </plurals>
+    <plurals name="settings_safety_on">
+        <item quantity="one">On · %1$d contact</item>
+        <item quantity="other">On · %1$d contacts</item>
+    </plurals>
+    <string name="safety_remove_contact">Remove contact %1$s</string>
+    <string name="safety_sms_example_title">Example SMS</string>
+    <string name="safety_sms_example">RideComp: %1$s may have had a cycling accident at 07:12. Last location: maps.google.com/?q=… (accuracy ±6 m). Automatic message.</string>
+    <string name="safety_sms_rider_unknown">a cyclist</string>
+    <string name="backup_included_title">Included</string>
+    <string name="backup_included">Activities &amp; FIT files · GPX routes · profiles &amp; settings · saved sensors</string>
+    <string name="backup_excluded_title">Not included</string>
+    <string name="backup_excluded">Emergency contacts · offline maps</string>
+    <string name="backup_password_recommended">Recommended: it holds locations &amp; HR data</string>
+    <string name="backup_create_hint">Save to Google Drive, WhatsApp or a phone folder</string>
+    <string name="offline_maps_title">Maps</string>
+    <string name="offline_maps_fallback_name">map</string>
+    <string name="offline_maps_saved">Saved areas</string>
+    <string name="offline_maps_import">Import map file (.pmtiles)</string>
+    <string name="offline_maps_importing">Importing…</string>
+    <string name="offline_maps_delete_title">Delete map %1$s?</string>
+    <string name="offline_maps_delete_message">The map file is removed from this phone. Routes and history stay.</string>
+    <string name="offline_maps_delete">Delete</string>
+    <string name="offline_maps_delete_label">Delete map %1$s</string>
+    <string name="offline_maps_storage_title">Phone storage</string>
+    <string name="offline_maps_storage">RideComp maps use %1$s · %2$s free</string>
+    <string name="offline_maps_item">%1$s · imported %2$s</string>
+    <string name="offline_maps_howto_title">Your own map file (optional)</string>
+    <string name="offline_maps_howto">The province maps above cover most rides. For another area, make a region file with \"pmtiles extract\" from the Protomaps map build on a computer, copy the .pmtiles file to the phone and import it here.</string>
+    <string name="offline_maps_error_not_pmtiles">This is not a PMTiles map file.</string>
+    <string name="offline_maps_error_version">This PMTiles version is not supported (v3 needed).</string>
+    <string name="offline_maps_error_not_vector">This file holds image tiles; RideComp needs a vector map.</string>
+    <string name="offline_maps_error_too_large">The map file is larger than 2 GB.</string>
+    <string name="offline_maps_error_no_space">Not enough storage on this phone.</string>
+    <string name="offline_maps_error_read">The map file cannot be read.</string>
+    <string name="settings_offline_maps_none">None yet</string>
+    <plurals name="settings_offline_maps_value">
+        <item quantity="one">%1$d area · %2$s</item>
+        <item quantity="other">%1$d areas · %2$s</item>
+    </plurals>
+    <!-- Open source licenses (D-65). Component and license names are proper names. -->
+    <string name="settings_licenses">Open source licenses</string>
+    <string name="licenses_title">Open source licenses</string>
+    <string name="licenses_intro">RideComp is built with these open source projects and map data. Tap one to read its license.</string>
+    <string name="licenses_maplibre_native" translatable="false">MapLibre Native (Android SDK)</string>
+    <string name="licenses_maplibre_components">MapLibre Native bundled components</string>
+    <string name="licenses_maplibre_gestures" translatable="false">MapLibre Android Gestures</string>
+    <string name="licenses_apache_libraries">AndroidX, Jetpack Compose, Room, Kotlin, kotlinx, Koin, MapLibre Java, OkHttp, Okio, Gson, Timber</string>
+    <string name="licenses_openstreetmap">OpenStreetMap map data</string>
+    <string name="licenses_bsd_2" translatable="false">BSD 2-Clause License</string>
+    <string name="licenses_apache_2" translatable="false">Apache License 2.0</string>
+    <string name="licenses_odbl" translatable="false">Open Database License (ODbL) 1.0</string>
+    <string name="licenses_various">BSD, MIT, Boost, FreeType and others</string>
+    <!-- Help topics (Phase 4G, TG.2) -->
+    <string name="guide_first_ride_title">Your first ride</string>
+    <string name="guide_first_ride_summary">Start, pause and save a ride.</string>
+    <string name="guide_first_ride_body" formatted="false">1. On the Ride tab, tap START RIDE. RideComp checks GPS and battery first.\n2. Wait until GPS is \"Ready\", then tap START. Recording continues with the screen off or the phone in a pocket.\n3. Swipe left/right to change data pages (speed, distance, map, climb, lap).\n4. Stopped at a red light? Recording pauses automatically and resumes when you ride again.\n5. Done: tap PAUSE, then FINISH &amp; SAVE. Name the ride and tap Save.\nTip: double-tap the ride screen to hide or show the buttons.</string>
+    <string name="guide_routes_gpx_title">Routes &amp; GPX files</string>
+    <string name="guide_routes_gpx_summary">What GPX is and how to add one.</string>
+    <string name="guide_routes_gpx_body" formatted="false">A GPX file holds a route line (the way you will ride). Make one in Strava, Komoot or RideWithGPS, or get it from friends or your club.\n1. Download or save the .gpx file to your phone (from email or WhatsApp, for example).\n2. Open the Routes tab, tap Import GPX and pick the file. Or open the .gpx file from a file manager and choose RideComp.\n3. The route appears in the list with its distance, climbing and elevation profile.\n4. Tap the route → Ride this route to start following it.\nClimbs and sharp turns are found automatically when you import.</string>
+    <string name="guide_navigation_title">Following a route</string>
+    <string name="guide_navigation_summary">Off-route, turn and climb alerts.</string>
+    <string name="guide_navigation_body" formatted="false">While following a route, the Map page shows the route (orange), the part already ridden (blue) and your position.\n• More than ~50 m off the route for 10 seconds: a long buzz, a beep and a red banner. Back on the route: two short buzzes.\n• Sharp turns: alerts about 150 m and 30 m before.\n• Climbs: an alert 500 m before, then the climb page shows distance and climbing left and the grade.\nDrag the map to look around; tap the position button to follow again.</string>
+    <string name="guide_offline_maps_title">Maps</string>
+    <string name="guide_offline_maps_summary">A street map with internet; a line without it.</string>
+    <string name="guide_offline_maps_body" formatted="false">With internet (Wi‑Fi or mobile data) RideComp shows a street map on the Map page while riding, on the route detail and in ride history. Map: OpenFreeMap (OpenStreetMap data), a few MB per hour of riding.\nMaps you have seen are kept in a cache (Settings → Map, 50–300 MB) and show again without internet.\nFor riding without signal: home offers your region\'s province map (from your last ride), or pick one in Settings → Map → Province maps. Downloads use Wi‑Fi and can pause and continue.\nWith no map at all, routes and tracks still show as a line.\nSettings → Map → Online map: Wi‑Fi &amp; data, Wi‑Fi only, or Off.</string>
+    <string name="guide_sensors_title">Connecting sensors</string>
+    <string name="guide_sensors_summary">Heart rate, cadence, speed and power.</string>
+    <string name="guide_sensors_body" formatted="false">Bluetooth sensors add data the phone cannot measure: heart rate (chest strap/armband), cadence (pedal turns), wheel speed and power meters.\n1. Wake the sensor (wear the HR strap, turn the pedals or wheel).\n2. Open the Sensors tab; the search starts by itself (tap Scan again if needed).\n3. Tap the sensor that appears to pair it. Only once.\n4. On your next ride the sensor connects by itself. The HR/CAD/PWR marks at the top of the ride screen turn green when connected.\nA sensor drops out mid-ride? Recording continues and RideComp keeps trying to reconnect.</string>
+    <string name="guide_watches_title">Heart rate sources</string>
+    <string name="guide_watches_summary">HR sensors, watches and how to connect them.</string>
+    <string name="guide_watches_body" formatted="false">Heart rate can come from three sources:\n1. Heart rate sensor (chest strap or armband, Bluetooth): the most accurate for cycling and works with every phone. Put on and wet the strap, open Sensors, tap Search and tap the sensor to pair it.\n2. A watch with HR broadcast: turn the feature on in the watch (see your brand below), then search. The watch shows as \"Watch · Heart rate\"; tap it to pair.\n3. A watch without HR broadcast (experimental): for now only the Aolon GTR 3 with the GloryFit app. Close GloryFit, turn on \"Show all Bluetooth devices\", search again and tap Check. Other watches without HR broadcast cannot be used yet; Check tells you when one is not supported.\nWatch not listed? Turn on \"Show all Bluetooth devices\", search again and tap Check. Still nothing? Close the watch\'s own app or turn its phone connection off for a moment: many watches allow only one Bluetooth connection.\nTurning on HR broadcast per brand (menu names differ per model):\n• Garmin: hold MENU > Health &amp; Wellness (or Sensors &amp; Accessories / Watch Sensors) > Wrist Heart Rate > Broadcast Heart Rate.\n• Polar: start training, choose a sport, then in pre-training open the quick menu > Share HR with other devices. Sharing stops when you leave training.\n• COROS: hold BACK on the watch face > Toolbox > Broadcast HR.\n• Suunto (Race, Vertical 2): in the sport mode\'s options before you start, turn on heart rate broadcast. Works only while recording.\n• Amazfit/Zepp (Zepp OS 3+): look for Heart Rate Push; on some models it only runs during a workout.\n• Xiaomi Smart Band: Settings > Share HR (Band 11), or Workout > Workout settings > HR broadcast (Band 10 Pro).\n• Huawei: app list > Settings > HR Data Broadcasts. Tested with HUAWEI WATCH FIT 5 Pro.\nWrist heart rate can lag a few seconds and be less exact on climbs or rough roads. For precise zone training, use a chest strap.</string>
+    <string name="guide_export_strava_title">Upload to Strava &amp; export</string>
+    <string name="guide_export_strava_summary">Rides to Strava in one tap, or as a file to other apps.</string>
+    <string name="guide_export_strava_body" formatted="false">Fastest: link Strava once in Settings → Strava (tap Connect with Strava, then Authorize). Then:\n1. Open the ride in History.\n2. Tap Upload to Strava. When it says View on Strava, the ride is there.\nTurn on Upload rides automatically and every saved ride goes by itself.\nOther apps (Garmin Connect, TrainingPeaks, Komoot): tap Send FIT file or Send GPX file. Not sure which? Tap What are FIT and GPX? on the ride page.\nEstimated power is never written to the FIT file, so your power data stays honest.</string>
+    <string name="guide_backup_title">Backup &amp; changing phones</string>
+    <string name="guide_backup_summary">Keep your ride history safe.</string>
+    <string name="guide_backup_body" formatted="false">All RideComp data lives on this phone only. Back up regularly so nothing is lost if the phone breaks or you change phones.\n1. Settings → Backup &amp; export data → Create backup.\n2. Choose where to save it, for example Google Drive. Turn on a password so others cannot read the file.\n3. On the new phone: install RideComp → Settings → Backup &amp; export data → Choose backup file → password.\nEmergency contacts are not in the backup for privacy; add them again after restoring.</string>
+    <string name="guide_records_segments_title">Records &amp; segments</string>
+    <string name="guide_records_segments_summary">Automatic PRs and your own segments.</string>
+    <string name="guide_records_segments_body" formatted="false">Records (PRs) are found every time you save a ride: fastest distances (1–100 km), best power (with a power meter), longest ride, most climbing. See History → Records.\nA segment is a favourite stretch of road you want to time, like a Strava segment but offline.\n1. Open a ride in History → Create a segment from this ride → drag the two handles to the start and end → Save. Or on a route: Make segment on a climb.\n2. Later rides over it in the same direction are matched automatically.\n3. While riding, a banner shows as you approach; on the segment the screen shows how far ahead or behind your record you are.</string>
+    <string name="guide_training_title">Training load</string>
+    <string name="guide_training_summary">Fitness, fatigue and form.</string>
+    <string name="guide_training_body" formatted="false">The Training tab estimates how hard you train from heart rate (or a power meter with your FTP).\n• Fitness: average load over 6 weeks — rises with regular training.\n• Fatigue: load of the last 7 days.\n• Form: fitness minus fatigue — positive means fresh, negative means tired.\nTo fill it in: ride with a heart-rate sensor and enter HR max (or birth year) in Settings → Rider profile. These are estimates for trends, not medical values.</string>
+    <string name="guide_share_card_title">Share card</string>
+    <string name="guide_share_card_summary">Share a ride on WhatsApp or Instagram.</string>
+    <string name="guide_share_card_body" formatted="false">1. Open the ride in History → Share a card.\n2. Choose Story (9:16) or Square (1:1), the statistics to show (up to 4) and the theme.\n3. \"Hide start and end of the route\" is on by default so your home is not visible.\n4. Tap Share and choose WhatsApp, Instagram or another app.\nThe card has no map and no coordinates, only the shape of the route.</string>
+    <string name="guide_safety_title">Safety &amp; crash detection</string>
+    <string name="guide_safety_summary">Emergency SMS if you crash.</string>
+    <string name="guide_safety_body" formatted="false">When turned on, RideComp detects hard impacts while riding.\n1. Settings → Safety → add up to 3 emergency contacts → turn on Incident detection.\n2. If a crash is detected, an alarm sounds and a 30-second countdown appears. Tap I\'M OK if you are fine.\n3. If nobody taps it, an SMS with your location goes to your emergency contacts.\nSend a test SMS first so your contacts know. Detection is not perfect; ride carefully.</string>
+    <string name="guide_battery_title">Battery &amp; phones that kill the app</string>
+    <string name="guide_battery_summary">So recording never stops mid-ride.</string>
+    <string name="guide_battery_body" formatted="false">Some phone makers (Xiaomi, Oppo, Realme, Vivo, Infinix, Samsung) stop apps in the background to save battery, which can stop recording.\n1. Open Settings → the yellow \"My phone kills the app\" card and follow the steps for your phone (allow Autostart / don\'t restrict battery).\n2. At ≤ 20% battery RideComp switches to saver mode; at ≤ 5% the ride is saved as an emergency file.\n3. The \"Auto dim\" or \"Off\" screen mode saves the most battery.</string>
+    <string name="guide_gps_signal_title">Lost GPS signal</string>
+    <string name="guide_gps_signal_summary">In a forest, a tunnel or between tall buildings.</string>
+    <string name="guide_gps_signal_body" formatted="false">In dense forest, tunnels, valleys or between tall buildings the phone can lose the satellites. RideComp keeps recording:\n• \"GPS signal lost · still recording\" shows and the time keeps running.\n• When the signal is back and you are following a GPX route, the missed distance is measured along the route. Without a route it is joined in a straight line from the last point, so on a winding trail it can come out a little short.\n• On the ride detail map, the part without signal is drawn dashed.\n\nFor a steadier signal:\n• Mount the phone on the handlebar facing the sky, not in a bag or pocket.\n• Wait for \"GPS ready\" before riding into the forest or a tunnel.\n• Turn off battery saving for RideComp (Battery topic). On many phones the GPS seems lost because the app is held back with the screen off, not because of the signal.\n• Use a Bluetooth wheel speed sensor: speed and distance stay right even with no GPS at all.</string>
+    <!-- Rider level, tips and Help (Phase 4G) -->
+    <string name="guide_level_title">How long have you been cycling?</string>
+    <string name="guide_level_text">RideComp shows more or fewer tips depending on your experience. You can change this later in Settings → Help.</string>
+    <string name="guide_level_beginner">Beginner</string>
+    <string name="guide_level_beginner_hint">New to cycling or less than 1 year. Tips on every screen.</string>
+    <string name="guide_level_intermediate">Intermediate</string>
+    <string name="guide_level_intermediate_hint">1–3 years, riding regularly. Tips for advanced features only.</string>
+    <string name="guide_level_experienced">Experienced</string>
+    <string name="guide_level_experienced_hint">More than 3 years or structured training. No tips; Help is always there.</string>
+    <string name="guide_help_title">Help &amp; guides</string>
+    <string name="guide_help_level">Your experience</string>
+    <string name="guide_help_topics">Guides</string>
+    <string name="guide_help_reset">Show all tips again</string>
+    <string name="guide_help_reset_done">Tips will show again.</string>
+    <string name="guide_tip_learn_more">Learn more</string>
+    <string name="guide_tip_close">Close tip</string>
+    <string name="guide_tip_first_ride">Tap START RIDE. The ride keeps recording with the screen off; pause and save when you finish.</string>
+    <string name="guide_tip_routes">A GPX file is a route line made in Strava, Komoot or similar. Import it here and RideComp guides you along it.</string>
+    <string name="guide_tip_sensors">Heart-rate, cadence, speed and power sensors connect over Bluetooth. Wake the sensor, then tap it in the list to pair once.</string>
+    <string name="guide_tip_export">Tap Upload to Strava below; link your account once in Settings → Strava. For other apps, send the FIT file.</string>
+    <string name="guide_tip_backup">Your rides live only on this phone. Make a backup to Google Drive now and then so you never lose them.</string>
+    <string name="guide_tip_offline_maps">Maps seen online show again without internet. For areas you have not viewed, download a province map below.</string>
+    <string name="settings_strava">Strava</string>
+    <string name="strava_connect_title">Strava</string>
+    <string name="strava_connect_subtitle">Upload rides automatically</string>
+    <string name="strava_back">Back</string>
+    <string name="strava_ok">OK</string>
+    <string name="strava_connect_hint">Strava opens. Keep \"Upload your activities\" ticked and tap Authorize.</string>
+    <string name="strava_connect">Connect with Strava</string>
+    <string name="strava_connected">Connected to Strava</string>
+    <string name="strava_connected_hint">Rides already on Strava stay there if you disconnect. You can also remove RideComp at strava.com/settings/apps.</string>
+    <string name="strava_message_connected">Connected. You can now upload rides to Strava.</string>
+    <string name="strava_message_denied">Strava was not connected (cancelled).</string>
+    <string name="strava_message_scope">\"Upload your activities\" must stay ticked. Tap Connect again.</string>
+    <string name="strava_message_offline">No internet. Connect again when you are online.</string>
+    <string name="strava_message_rejected">Strava did not accept the sign-in. Tap Connect again.</string>
+    <string name="strava_message_failed">Could not connect to Strava. Try again.</string>
+    <string name="strava_message_no_browser">No browser or Strava app found to open the page.</string>
+    <string name="settings_strava_connected">Connected</string>
+    <string name="settings_strava_not_connected">Not connected</string>
+    <string name="strava_auto_upload">Upload rides automatically</string>
+    <string name="strava_auto_upload_hint">After you save a ride it goes to Strava by itself while RideComp is open (with internet).</string>
+    <string name="strava_disconnect">Disconnect Strava</string>
+    <string name="strava_disconnect_title">Disconnect Strava?</string>
+    <string name="strava_disconnect_message">RideComp loses access to your Strava account and stops uploading. Rides already on Strava stay there. You can connect again later.</string>
+    <string name="strava_message_disconnected">Disconnected. RideComp no longer has access to Strava.</string>
+    <string name="strava_message_disconnected_locally">Disconnected on this phone. No internet to tell Strava: remove RideComp at strava.com/settings/apps to be sure.</string>
+    <string name="strava_unavailable">Strava upload is not available in this version of RideComp. You can still send the FIT file to Strava from a ride\'s detail page.</string>
+    <string name="strava_cancel">Cancel</string>
+    <string name="strava_hero_title">Send your rides to Strava</string>
+    <string name="strava_hero_text">Link your Strava account once. No more exporting files.</string>
+    <string name="strava_benefit_tap_title">One tap per ride</string>
+    <string name="strava_benefit_tap_text">\"Upload to Strava\" on the ride\'s page</string>
+    <string name="strava_benefit_auto_title">Or fully automatic</string>
+    <string name="strava_benefit_auto_text">Turn it on and every saved ride goes by itself</string>
+    <string name="strava_benefit_private_title">Upload permission only</string>
+    <string name="strava_benefit_private_text">RideComp cannot see your other Strava data</string>
+    <string name="strava_powered_by" translatable="false">Powered by Strava</string>
+    <string name="onboarding_allow_all">Allow &amp; continue</string>
+    <string name="onboarding_required">Required</string>
+    <string name="onboarding_optional">Optional</string>
+    <string name="profile_advanced_title">Advanced settings (optional)</string>
+    <string name="profile_advanced_subtitle">HR max, FTP, hand position: defaults work fine</string>
+    <string name="language_title">Language</string>
+    <string name="language_back">Back</string>
+    <string name="language_system">Follow phone language</string>
+    <string name="language_system_hint">Uses the language set on this phone</string>
+    <string name="onboarding_language_title">Choose your language</string>
+    <string name="onboarding_language_text">Pilih bahasa · Choose a language. You can change it later in Settings.</string>
+    <string name="language_indonesian" translatable="false">Bahasa Indonesia</string>
+    <string name="language_english" translatable="false">English</string>
+
+    <!-- Saved bikes (D-89) -->
+    <string name="settings_bikes">My bikes</string>
+    <plurals name="settings_bikes_value">
+        <item quantity="one">%1$d bike</item>
+        <item quantity="other">%1$d bikes</item>
+    </plurals>
+    <string name="onboarding_bike_title">Your bike</string>
+    <string name="onboarding_bike_text">Save the bike you usually ride. Before each ride you just pick it; more bikes can be added in Settings → My bikes.</string>
+
+    <!-- Online map (D-90) -->
+    <string name="maps_online_label">Online map</string>
+    <string name="maps_online_always">Wi‑Fi &amp; data</string>
+    <string name="maps_online_wifi">Wi‑Fi only</string>
+    <string name="maps_online_off">Off</string>
+    <string name="maps_online_hint">With internet, a street map shows on the ride map page, route detail and ride history. Without internet, maps seen before come from the cache; elsewhere routes and tracks show as a line. Map: OpenFreeMap (OpenStreetMap data), a few MB per hour of riding; the map server sees the area being shown.</string>
+    <string name="maps_cache_label">Map cache</string>
+    <string name="maps_cache_hint">Maps you have seen online show again without internet, without using data. Using %1$s now; the oldest map pieces go first when full.</string>
+    <string name="maps_cache_clear">Clear map cache</string>
+    <string name="maps_cache_clear_title">Clear the map cache?</string>
+    <string name="maps_cache_clear_message">Maps seen before no longer show without internet until you view them online again. Rides, routes and offline map files stay.</string>
+    <string name="maps_regions_header">Province maps</string>
+    <string name="maps_regions_here">Your region · %1$s</string>
+    <string name="maps_regions_not_installed">%1$s · not downloaded</string>
+    <string name="maps_regions_installed">%1$s · on this phone</string>
+    <string name="maps_regions_update">%1$s · newer map data</string>
+    <string name="maps_regions_downloading">Downloading %1$s of %2$s</string>
+    <string name="maps_regions_paused">%1$s · paused, tap to continue</string>
+    <string name="maps_regions_failed">%1$s · stopped, tap to try again</string>
+    <string name="maps_regions_download">Download map %1$s</string>
+    <string name="maps_regions_cancel">Cancel download %1$s</string>
+    <string name="maps_regions_mobile_data">Also download on mobile data</string>
+    <string name="maps_regions_mobile_data_hint">When off, province maps download over Wi‑Fi only.</string>
+    <string name="offline_maps_error_limit">The offline map limit is full. Delete a map or raise the limit.</string>
+    <string name="offline_maps_low_space">Less than 500 MB free on the phone: rides need space too.</string>
+    <string name="offline_maps_limit_label">Offline maps limit</string>
+    <string name="offline_maps_limit_hint">Imported and province maps together. A map that does not fit is not saved.</string>
+    <string name="maps_regions_limit">%1$s · does not fit the offline map limit</string>
+    <string name="maps_offline_header">Offline maps (optional)</string>
+    <string name="settings_maps_online_value">Online: %1$s</string>
+
+    <!-- Voice announcements (T7.1) -->
+    <string name="ride_settings_mi">%1$d mi</string>
+    <string name="ride_settings_voice">Voice announcements</string>
+    <string name="ride_settings_voice_laps">Announce laps</string>
+    <string name="ride_settings_voice_description">The phone speaks distance, time, average speed and heart rate, plus drink/eat reminders. Music is lowered while it speaks. Uses the phone\'s own voice, no internet.</string>
+    <string name="update_title">App updates</string>
+    <string name="update_installed">Installed version</string>
+    <string name="update_auto">Check for updates automatically</string>
+    <string name="update_auto_hint">When you open the app, at most once a day. Only GitHub is asked; nothing about you is sent.</string>
+    <string name="update_check_now">Check now</string>
+    <string name="update_checking">Checking…</string>
+    <string name="update_up_to_date">You have the latest version.</string>
+    <string name="update_failed">Could not check. Make sure you are online and try again.</string>
+    <string name="update_download">Download version %1$s</string>
+    <string name="update_how">Install the new APK over this app: rides, bikes and settings stay. Never uninstall first.</string>
+    <string name="settings_update">App updates</string>
+    <string name="welcome_app_name" translatable="false">RideComp</string>
+    <string name="welcome_title_start">Turn your phone into a</string>
+    <string name="welcome_title_accent">bike computer.</string>
+    <string name="welcome_text">Record every ride, follow routes and train smarter, even without a signal and on an affordable phone.</string>
+    <string name="welcome_sample_rec" translatable="false">REC</string>
+    <string name="welcome_sample_speed_unit">km/h</string>
+    <string name="welcome_sample_line">18.6 km · 142 bpm · 210 W</string>
+    <string name="welcome_feature_record">GPS and Bluetooth sensors, screen off</string>
+    <string name="welcome_feature_navigate">Routes, maps and training plans</string>
+    <string name="welcome_feature_free">Free, no account, open source</string>
+    <string name="welcome_start">Get started</string>
+    <string name="welcome_footnote">Takes about a minute. You can skip personal details.</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_skip_hint">Optional. Skip it and fill it in later before a ride or in Settings.</string>
+    <string name="guide_tip_heart_rate_zones">Pair a heart rate sensor to see the time in each heart rate zone on the ride page.</string>
+    <!-- Display (T11.9) -->
+    <string name="display_title">Display</string>
+    <string name="display_theme">Theme</string>
+    <string name="display_theme_dark">Dark</string>
+    <string name="display_theme_dark_hint">Easy on the eyes and the battery at night and on AMOLED screens.</string>
+    <string name="display_theme_light">Light</string>
+    <string name="display_theme_light_hint">Often easier to read in bright sun.</string>
+    <string name="display_theme_system">Follow phone</string>
+    <string name="display_theme_system_hint">Dark or light as your phone is set.</string>
+</resources>

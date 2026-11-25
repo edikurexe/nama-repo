@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    RideComp app icon (docs/brand/RideComp-icon.svg): a speedometer arc in the accent color and a white
+    needle, inside the adaptive-icon safe zone (66 dp circle in the middle of 108 dp).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M38.444,69.556 A22,22 0 1,1 69.556,69.556"
+        android:strokeWidth="7"
+        android:strokeColor="#FC6A1E"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M54,54 L63.19,44.81"
+        android:strokeWidth="5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M49,54a5,5 0 1,0 10,0a5,5 0 1,0 -10,0z" />
+</vector>

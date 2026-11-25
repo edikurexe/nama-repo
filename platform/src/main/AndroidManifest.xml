@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Permissions of the recording pipeline (03-ARCHITECTURE §2, SEC-PLT-06). SMS and network
+    permissions are added in the phase that needs them. Location "while in use" is enough because the
+    foreground service is started from the open app (no ACCESS_BACKGROUND_LOCATION).
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- GPS is mandatory (01-PRD §5 minimum device): rides cannot be recorded without it. -->
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true"
+        tools:ignore="UnnecessaryRequiredFeature" />
+
+    <!--
+        Share card buttons (T10.6): only whether these apps are installed, to show their buttons
+        (package visibility, Android 11+). Keep in sync with ExportPaths.*_PACKAGE.
+    -->
+    <queries>
+        <package android:name="com.instagram.android" />
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Whether there is internet / Wi‑Fi for the online map (D-90, AndroidNetworkStatusSource). -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+        Required by the spec (01-PRD risk "OEM kills the app", 03-ARCHITECTURE §7): without the exemption
+        aggressive OEMs stop rides. Distribution is APK sideload; to be reviewed before any Play Store release.
+    -->
+    <uses-permission
+        android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"
+        tools:ignore="BatteryLife" />
+
+    <!--
+        BLE sensors (Phase 2, 04-INTEGRATIONS §A). Optional hardware: the app works with GPS only.
+        Android 12+: scan without deriving location (neverForLocation); Android 8–11: legacy permissions,
+        BLE scanning there relies on the location permission already requested above.
+    -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="s" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <!--
+        Emergency SMS (12-FEATURE-SPECS §5, SEC-SMS-01..07): requested at runtime only when the rider turns
+        incident detection on. Sideload distribution; to be reviewed before any Play Store release (SEC-SMS-07).
+        Phones without telephony can still install the app; the feature then reports send failures.
+    -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application>
+        <!-- Not exported (SEC-PLT-01/02): only explicit intents from this app reach it. -->
+        <service
+            android:name=".service.RecordingService"
+            android:exported="false"
+            android:foregroundServiceType="location" />
+    </application>
+
+</manifest>
